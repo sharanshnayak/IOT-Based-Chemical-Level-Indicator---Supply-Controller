@@ -1,0 +1,318 @@
+:root{
+  --bgOrange: #e84949;
+}
+
+
+head{
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+}
+body {
+ /*background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(#e31212, #e31212 50%, #fff 50%); */
+ align-items: center;
+justify-content: center;
+background-image:url(image/images.jpg);
+background-repeat: repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+.title{
+text-align: center;
+font-weight:700;
+}
+.row{
+  display: flex;
+}
+.col-6{
+width: 50%;
+margin-left: 10%;
+}
+#speedtest{
+position: relative;
+width: 300px;
+height: 300px;
+padding: 20px;
+border-radius: 6px;
+box-sizing: border-box;
+flex-direction:column ; 
+}
+.row h1{
+text-align:center;
+color:aqua;
+}
+#speedtest #gauge {
+width: 100%;
+height: 100%;
+padding: 12px;
+background: #fff;
+border-radius: 50%;
+box-shadow: 0 0 32px rgba(21, 55, 172, 0.25), inset 0 -192px 192px -240px #e31212;
+box-sizing: border-box;
+}
+#speedtest #gauge path:first-child {
+opacity: 1 !important;
+display: block !important;
+}
+#speedtest #gauge-label {
+position: absolute;
+width: 100%;
+top: 47.5%;
+left: 50%;
+text-align: center;
+font-size: 64px;
+transform: translate(-50%, -50%);
+color: #e31212;
+}
+#speedtest #gauge-label:after {
+content: "Chemical%";
+position: absolute;
+font-size: 35%;
+bottom: 5px;
+left: 50%;
+transform: translate(-50%, 100%);
+}
+#speedtest:before{
+display: block;
+position: absolute;
+bottom: 25%;
+font-family: inherit;
+font-size: 14px;
+color: #9198af;
+left: 28%;
+}
+#speedtest:after {
+display: block;
+position: absolute;
+bottom: 25%;
+font-family: inherit;
+font-size: 14px;
+color: #9198af;
+right: 28%;
+}
+
+#speedtest2 {
+position: relative;
+width: 300px;
+height: 300px;
+padding: 20px;
+border-radius: 6px;
+box-sizing: border-box;
+}
+#speedtest2 #gauge2 {
+width: 100%;
+height: 100%;
+padding: 12px;
+background: #fff;
+border-radius: 50%;
+box-shadow: 0 0 32px rgba(21, 55, 172, 0.25), inset 0 -192px 192px -240px #e31212;
+box-sizing: border-box;
+}
+#speedtest2 #gauge2 path:first-child {
+opacity: 1 !important;
+display: block !important;
+}
+#speedtest2 #gauge-label1 {
+position: absolute;
+width: 100%;
+top: 47.5%;
+left: 50%;
+text-align: center;
+font-size: 64px;
+transform: translate(-50%, -50%);
+color: #e31212;
+}
+#speedtest2 #gauge-label1:after {
+content: "Chemical-Height";
+position: absolute;
+font-size: 20px;
+text-align:center;
+bottom: 5px;
+left: 50%;
+transform: translate(-50%, 100%);
+}
+
+.btn{
+width: 100%;
+text-align:center;
+}
+#ON{
+/*width:100px;*/
+margin: auto;
+margin-top: 100px;
+margin-bottom: 20px;
+/* display: flex; */
+justify-content: center;
+}
+
+#ON{
+background-color: var(--bgOrange);
+ width: fit-content;
+color: white;
+padding: 0.8rem 2.3rem ;
+font-size: 18px;
+box-shadow: 5px 5px 7px 0 #0000003f;
+cursor: pointer;
+transition: all 0.5s;
+font-weight: 500;
+border: solid 3px transparent;
+position: relative;
+z-index: 1;
+}
+
+#ON::before{
+content:"";
+background-color: #fff;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+transform: scaleX(0);
+transform-origin: left;
+transition: all 0.8s;
+z-index:-1;
+}
+
+#ON:hover::before{
+transform: scaleX(1);
+}
+#ON:hover{
+border: solid 3px var(--bgOrange);
+color: black;
+}
+
+#OFF{
+/*width: 100px;*/
+margin: auto;
+margin-top: 100px;
+margin-bottom: 20px;
+/* display: flex;
+justify-content: center; */
+}
+
+#OFF{
+
+margin-left: 3%;
+background-color: var(--bgOrange);
+width: fit-content;
+color: white;
+padding: 0.8rem 2.3rem ;
+font-size: 18px;
+box-shadow: 5px 5px 7px 0 #0000003f;
+cursor: pointer;
+transition: all 0.5s;
+font-weight: 500;
+border: solid 3px transparent;
+position: relative;
+z-index: 1;
+}
+
+#OFF::before{
+content:"";
+background-color: #fff;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+transform: scaleX(0);
+transform-origin: right;
+transition: all 0.8s;
+z-index:-1;
+}
+
+#OFF:hover::before{
+transform: scaleX(1);
+}
+#OFF:hover{
+border: solid 3px var(--bgOrange);
+color: black;
+}
+#force{
+/*width:100px;*/
+
+margin: auto;
+margin-top: 100px;
+margin-bottom: 20px;
+
+ /*display: flex; 
+justify-content: center;*/
+}
+
+#force{
+   margin-left: 3%;
+background-color: var(--bgOrange);
+width: fit-content;
+color: white;
+padding: 0.8rem 2.3rem ;
+font-size: 18px;
+box-shadow: 5px 5px 7px 0 #0000003f;
+cursor: pointer;
+transition: all 0.5s;
+font-weight: 500;
+border: solid 3px transparent;
+position: relative;
+z-index: 1;
+}
+
+#force::before{
+content:"";
+background-color: #fff;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+transform: scaleX(0);
+transition: all 0.8s;
+z-index:-1;
+}
+
+#force:hover::before{
+transform: scaleX(1);
+}
+#force:hover{
+border: solid 3px var(--bgOrange);
+color: black;
+}
+.btn #ON{
+font-size: 25px;
+}
+.btn #OFF{
+font-size: 25px;
+} 
+.btn #force{
+font-size: 25px;
+} 
+@media screen and (max-width: 750px){
+.row{
+flex-direction: column;
+align-items: center;
+}
+#speedtest{
+  margin-top:18%;
+}
+.col-6{
+  width: 300px; 
+  margin-left: 0%;
+}
+body{
+  height:170vh;
+}
+}
+@media screen and (max-width: 672px){
+  #force{
+
+margin-top:0;
+margin-left:0;
+text-align:center;
+}
+#OFF{
+margin-left:0;
+margin-top:0;
+}
+}
